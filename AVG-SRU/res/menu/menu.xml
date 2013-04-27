@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_create_group"
+        android:title="@string/en_action_create_group"/>
+    
+    <item
+        android:id="@+id/action_join_group"
+        android:title="@string/en_action_join_group"/>
+    
+    <item
+        android:id="@+id/action_view_groups"
+        android:title="@string/en_action_view_groups"/>
+    
+    <item
+        android:id="@+id/action_change_group"
+        android:title="@string/en_action_change_group"/>
+    
+    <item
+        android:id="@+id/action_edit_profile"
+        android:title="@string/en_action_edit_profile"/>
+    
+    <item
+        android:id="@+id/action_view_members"
+        android:title="@string/en_action_view_members"/>
+
+</menu>
