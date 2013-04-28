@@ -1,9 +1,12 @@
 package com.pda_sru;
 
+import com.google.android.youtube.player.YouTubeBaseActivity;
+import com.google.android.youtube.player.YouTubeInitializationResult;
+import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayer.Provider;
 import com.google.android.youtube.player.YouTubePlayerView;
 
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,7 +16,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class Home extends Activity implements OnClickListener {
+public class Home extends YouTubeBaseActivity implements OnClickListener, YouTubePlayer.OnInitializedListener {
 	
 	//Layout components
 	Button home_btn_send_message, home_btn_playlist;
@@ -31,7 +34,35 @@ public class Home extends Activity implements OnClickListener {
 		setContentView(R.layout.layout_home);
 		
 		//Initialize layout components
+		home_btn_send_message = (Button) findViewById(R.id.home_btn_send_message);
+		home_btn_playlist = (Button) findViewById(R.id.home_btn_playlist);
+		home_song_name = (TextView) findViewById(R.id.home_song_name);
+		home_edittext_message = (EditText) findViewById(R.id.home_edittext_message);
+		home_listview_chat = (ListView) findViewById(R.id.home_listview_chat);
+		home_youtube_view = (YouTubePlayerView) findViewById(R.id.home_youtube_view);
 		
+		//Initialize YouTube player - something between God and API
+		home_youtube_view.initialize("AIzaSyB4rzzlYd_reDfyjf9I9yOJiPGOD00qxqs", this);
+		
+	}
+	
+	/**
+	 * YouTubePlayer.OnInitializedListener function, dunno what it does
+	 */
+	@Override
+	public void onInitializationFailure(Provider arg0, YouTubeInitializationResult arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/**
+	 * YouTubePlayer.OnInitializedListener function, dunno what it does
+	 */
+	@Override
+	public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean wasRestored) {
+		if (!wasRestored) {
+		      player.cueVideo("wKJ9KzGQq0w");
+		}
 	}
 
 	/**
@@ -84,7 +115,12 @@ public class Home extends Activity implements OnClickListener {
 		int id = v.getId();
 		
 		switch(id) {
-		
+		case R.id.home_btn_send_message:
+			
+			return;
+		case R.id.home_btn_playlist:
+			
+			return;
 		}
 		
 	}
