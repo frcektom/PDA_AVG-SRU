@@ -1,13 +1,26 @@
 package com.pda_sru;
 
+import com.google.android.youtube.player.YouTubePlayerView;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
 
 public class Home extends Activity implements OnClickListener {
+	
+	//Layout components
+	Button home_btn_send_message, home_btn_playlist;
+	TextView home_song_name;
+	EditText home_edittext_message;
+	ListView home_listview_chat;
+	YouTubePlayerView home_youtube_view;
 
 	/**
 	 * Called when Activity is created. Should initiate all layout object here.
@@ -16,6 +29,9 @@ public class Home extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.layout_home);
+		
+		//Initialize layout components
+		
 	}
 
 	/**

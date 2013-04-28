@@ -11,4 +11,9 @@
     <string name="en_action_edit_profile">Edit profile</string>
     <string name="en_action_view_members">View group members</string>
     
+    <!-- Home content -->
+    <string name="en_home_btn_playlist">Playlist</string>
+    <string name="en_home_edittext_hint">Type message</string>
+    <string name="en_home_btn_send">Send</string>
+    
 </resources>
