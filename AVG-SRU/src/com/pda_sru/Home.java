@@ -6,6 +6,7 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayer.Provider;
 import com.google.android.youtube.player.YouTubePlayerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -44,6 +45,10 @@ public class Home extends YouTubeBaseActivity implements OnClickListener, YouTub
 		//Initialize YouTube player - something between God and API
 		home_youtube_view.initialize("AIzaSyB4rzzlYd_reDfyjf9I9yOJiPGOD00qxqs", this);
 		
+		//Set onClickListeners
+		home_btn_playlist.setOnClickListener(this);
+		home_btn_send_message.setOnClickListener(this);
+		
 	}
 	
 	/**
@@ -61,7 +66,7 @@ public class Home extends YouTubeBaseActivity implements OnClickListener, YouTub
 	@Override
 	public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean wasRestored) {
 		if (!wasRestored) {
-		      player.cueVideo("wKJ9KzGQq0w");
+		      player.cueVideo("0M0RbaPxq2k");
 		}
 	}
 
@@ -119,6 +124,10 @@ public class Home extends YouTubeBaseActivity implements OnClickListener, YouTub
 			
 			return;
 		case R.id.home_btn_playlist:
+			
+			Intent i = new Intent(Home.this, Playlist.class);
+			i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+			startActivity(i);
 			
 			return;
 		}

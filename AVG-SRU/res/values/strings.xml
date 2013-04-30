@@ -16,4 +16,8 @@
     <string name="en_home_edittext_hint">Type message</string>
     <string name="en_home_btn_send">Send</string>
     
+    <!-- Playlist content -->
+    <string name="en_playlist_title">Playlist</string>
+    <string name="en_playlist_add">Add clip</string>
+    
 </resources>
