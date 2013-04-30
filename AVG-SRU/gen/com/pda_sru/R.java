@@ -33,12 +33,12 @@ public final class R {
         public static final int ic_launcher=0x7f020004;
     }
     public static final class id {
-        public static final int action_change_group=0x7f09000c;
-        public static final int action_create_group=0x7f090009;
-        public static final int action_edit_profile=0x7f09000d;
-        public static final int action_join_group=0x7f09000a;
-        public static final int action_view_groups=0x7f09000b;
-        public static final int action_view_members=0x7f09000e;
+        public static final int action_change_group=0x7f090010;
+        public static final int action_create_group=0x7f09000d;
+        public static final int action_edit_profile=0x7f090011;
+        public static final int action_join_group=0x7f09000e;
+        public static final int action_view_groups=0x7f09000f;
+        public static final int action_view_members=0x7f090012;
         public static final int home_btn_playlist=0x7f090002;
         public static final int home_btn_send_message=0x7f090005;
         public static final int home_edittext_message=0x7f090004;
@@ -48,10 +48,15 @@ public final class R {
         public static final int playlist_btn_add=0x7f090008;
         public static final int playlist_group_name=0x7f090006;
         public static final int playlist_listview=0x7f090007;
+        public static final int searchdialog_btn_ok=0x7f09000c;
+        public static final int searchdialog_btn_search=0x7f09000a;
+        public static final int searchdialog_edittext_search=0x7f090009;
+        public static final int searchdialog_listview=0x7f09000b;
     }
     public static final class layout {
         public static final int layout_home=0x7f030000;
         public static final int layout_playlist=0x7f030001;
+        public static final int layout_search_dialog=0x7f030002;
     }
     public static final class menu {
         public static final int menu=0x7f080000;
@@ -75,6 +80,11 @@ public final class R {
         /**  Playlist content 
          */
         public static final int en_playlist_title=0x7f06000a;
+        /**  Search dialog content 
+         */
+        public static final int en_searchdialog_hint=0x7f06000c;
+        public static final int en_searchdialog_ok=0x7f06000e;
+        public static final int en_searchdialog_search=0x7f06000d;
     }
     public static final class style {
         /** 

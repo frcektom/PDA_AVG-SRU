@@ -20,4 +20,9 @@
     <string name="en_playlist_title">Playlist</string>
     <string name="en_playlist_add">Add clip</string>
     
+    <!-- Search dialog content -->
+    <string name="en_searchdialog_hint">Search YouTube</string>
+    <string name="en_searchdialog_search">Search</string>
+    <string name="en_searchdialog_ok">OK</string>
+    
 </resources>
