@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pda_sru.Playlist"
+    android:background="@color/dim_gray"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/pale_gray"
+        android:gravity="center"
+        android:text="@string/en_playlist_title"
+        android:textIsSelectable="false" />
+    
+    <TextView
+        android:id="@+id/playlist_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/pale_gray"
+        android:textIsSelectable="true" />
+    
+    <ListView
+        android:id="@+id/playlist_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dim_gray" />
+    
+    <Button
+        android:id="@+id/playlist_btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:text="@string/en_playlist_add"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>
